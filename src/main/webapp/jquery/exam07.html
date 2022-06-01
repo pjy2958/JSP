@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            float: left;
+            border: 1px solid beige;
+        }
+        button {
+            height: 300px;
+            float: left;
+            background-color: beige;
+            border: none;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#prevBtn').click(function () {
+                $('img').last().prependTo('span')
+            })
+            $('#nextBtn').click(function () {
+                $('img').first().appendTo('span')
+            })
+
+            // 일정시간마다 호출해주는 함수
+            let id = setInterval(function (){
+                $('#nextBtn').trigger('click')
+            }, 1000)
+            // console.log(id)
+            // // 종료하는 함수
+            // clearInterval(id)
+        })
+    </script>
+</head>
+<body>
+<button id="prevBtn">PREV</button>
+<span>
+    <img src="/webapp/imgs/dog01.jpeg">
+    <img src="/webapp/imgs/dog02.jpeg">
+    <img src="/webapp/imgs/dog03.jpeg">
+    <img src="/webapp/imgs/dog04.jpeg">
+</span>
+<button id="nextBtn">NEXT</button>
+</body>
+</html>

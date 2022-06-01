@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insert title here</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('h1').click(function () {
+            //     $(this).css('color', 'red')
+            // })
+            //
+            // // 두개는 세트
+            // // $('h1').mouseenter(function () {
+            // //     $(this).css('background-color', 'lightgray')
+            // // })
+            // //
+            // // $('h1').mouseleave(function () {
+            // //     $(this).css('background-color', 'white')
+            // // })
+            // // 두개를 합쳐서 hover
+            // $('h1').hover(function (){
+            //     $(this).css('background-color', 'lightgray')
+            // }, function (){
+            //     $(this).css('background-color', 'white')
+            // })
+
+            // 위와 달리 h1태그의 함수들을 뭉탱이로 쓰고싶을경우
+            $('h1').on({
+                click : function (){
+                    $(this).css({
+                        'color' : 'red',
+                        'background-color' : 'black',
+                        'opacity' : 0.5
+                    })
+                },
+                mouseenter: function (){
+                    $(this).css('background-color', 'lightgray')
+                },
+                mouseleave: function (){
+                    $(this).css('background-color', 'white')
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<h1>첫번째 문장</h1>
+<h1>두번째 문장</h1>
+<h1>세번째 문장</h1>
+</body>
+</html>

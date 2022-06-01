@@ -1,0 +1,169 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeWork01</title>
+    <style>
+        body{
+            display: flex;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            text-align: center;
+            line-height: 100px;
+            color: black;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function (){
+            $("#1").css({
+                'background-color': 'red'
+            })
+            $("#2").css({
+                'background-color': 'orange'
+            })
+            $("#3").css({
+                'background-color': 'yellow'
+            })
+            $("#4").css({
+                'background-color': 'green'
+            })
+            $("#5").css({
+                'background-color': 'blue'
+            })
+            $("#6").css({
+                'background-color': 'darkblue'
+            })
+            $("#7").css({
+                'background-color': 'purple'
+            })
+            $("#1").mouseover(function (){
+                $("#1").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#1").mouseout(function (){
+                $("#1").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+            $("#2").mouseover(function (){
+                $("#2").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#2").mouseout(function (){
+                $("#2").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+            $("#3").mouseover(function (){
+                $("#3").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#3").mouseout(function (){
+                $("#3").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+            $("#4").mouseover(function (){
+                $("#4").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#4").mouseout(function (){
+                $("#4").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+            $("#5").mouseover(function (){
+                $("#5").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#5").mouseout(function (){
+                $("#5").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+            $("#6").mouseover(function (){
+                $("#6").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#6").mouseout(function (){
+                $("#6").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+            $("#7").mouseover(function (){
+                $("#7").animate({
+                    width: '200px',
+                    height: '200px'
+                }).text(function (index, element){
+                    return element + "요일"
+                })
+            })
+            $("#7").mouseout(function (){
+                $("#7").animate({
+                    width: '100px',
+                    height: '100px'
+                }).text(function (index, element){
+                    return element[0]
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="1">일</div>
+    <div id="2">월</div>
+    <div id="3">화</div>
+    <div id="4">수</div>
+    <div id="5">목</div>
+    <div id="6">금</div>
+    <div id="7">토</div>
+</body>
+</html>

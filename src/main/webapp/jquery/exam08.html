@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    img {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: true,
+                slideWidth: 600
+            });
+        });
+    })
+</script>
+<body>
+<div class="bxslider">
+    <div><img src="/imgs/dog01.jpeg" title="Funky roots"></div>
+    <div><img src="/imgs/dog02.jpeg" title="The long and winding road"></div>
+    <div><img src="/imgs/dog03.jpeg" title="Happy trees"></div>
+</div>
+</body>
+</html>
