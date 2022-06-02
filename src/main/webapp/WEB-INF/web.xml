@@ -7,12 +7,12 @@
         http://localhost:9999/Lecture-Web/hello 요청시
         kr.ac.kopo.servlet.HelloServlet.java가 실행되도록 mapping
     -->
-    <servlet>
-        <servlet-name>hello</servlet-name>
-        <servlet-class>kr.ac.kopo.servlet.HelloServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>hello</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>servlet/method/exam</servlet-name>-->
+<!--        <servlet-class>kr.ac.kopo.servlet.ExamServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>servlet/method/exam</servlet-name>-->
+<!--        <url-pattern>/servlet/method/exam</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
