@@ -3,4 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--
+        http://localhost:9999/Lecture-Web/hello 요청시
+        kr.ac.kopo.servlet.HelloServlet.java가 실행되도록 mapping
+    -->
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>kr.ac.kopo.servlet.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
 </web-app>
