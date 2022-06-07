@@ -15,7 +15,7 @@ public class ExamServlet extends HttpServlet {
         취미 : ~~~~
      */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 //        request.setCharacterEncoding("utf-8");  // Post방식에서는 한글이 깨지기 때문에 반드시 설정
 
