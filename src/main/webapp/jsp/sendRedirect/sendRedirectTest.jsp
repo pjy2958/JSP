@@ -11,9 +11,9 @@
 	<title>Title</title>
 </head>
 <body>
-  <form action="sendRedirectSet.jsp">
-    id : <input type="text" name="id">
-    <input type="submit" value="전송">
-  </form>
+<form action="sendRedirectSet.jsp">
+	id : <input type="text" name="id">
+	<input type="submit" value="전송">
+</form>
 </body>
 </html>
